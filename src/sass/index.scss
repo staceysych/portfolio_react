@@ -1,0 +1,10 @@
+@import 'antd/dist/antd.css';
+@import './fonts.scss';
+
+@import './constants.scss';
+@import '../components/main/main.scss';
+@import '../components/navigation/navigation.scss';
+
+#app {
+    font-family: Countryside;
+}
