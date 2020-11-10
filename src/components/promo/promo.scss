@@ -1,0 +1,11 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  h2 {
+    max-width: 160px;
+
+    text-align: center;
+  }
+}

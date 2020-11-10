@@ -3,7 +3,7 @@ import React from 'react';
 const Navigation = () => (
   <div className="navigation">
     <ul className="navigation__links">
-      <li className="logo">
+      <li className="current__link">
         <a>Sych.</a>
       </li>
       <li>

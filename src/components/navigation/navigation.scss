@@ -13,6 +13,7 @@
   color: $text-color;
 
   background-color: $main-color;
+  z-index: 9;
 }
 
 .navigation__links {
@@ -24,7 +25,10 @@
   padding: 0 40px;
 
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  li:hover {
+    color: $text-hover-color;
+  }
   a {
     position: relative;
 
@@ -55,6 +59,27 @@
     width: 100%;
   }
 }
+
+.current__link {
+  a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background: none repeat scroll 0 0 transparent;
+    background: $text-color;
+
+    transition: width .3s ease 0s, left .3s ease 0s;
+
+    pointer-events: none;
+  }
+}
+
 
 .contact__btn {
   display: flex;
