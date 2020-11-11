@@ -23,6 +23,7 @@
   margin: 0;
 
   object-fit: contain;
+  animation: photo 2s linear forwards;
 }
 
 #js {
@@ -82,6 +83,14 @@
 }
 
 
+@keyframes photo {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @keyframes git {
   from {
     transform: rotate(0deg) translateX(215px) rotate(0deg);

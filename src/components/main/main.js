@@ -4,7 +4,7 @@ import Navigation from '../navigation/navigation';
 import Promo from '../promo/promo';
 
 const MainPage = () => (
-  <div>
+  <div className="main-page">
     <Navigation />
     <Promo />
   </div>

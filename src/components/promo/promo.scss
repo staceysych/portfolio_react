@@ -3,9 +3,43 @@
   justify-content: space-between;
   align-items: center;
   height: 90vh;
+  padding: 100px 20px 0 20px;
   h2 {
-    max-width: 160px;
+    max-width: 30%;
 
+    font-size: 3.4rem;
     text-align: center;
+    text-align: center;
+    color: $main-color;
+    text-shadow: 2px 4px 0 #04346C;
   }
+}
+
+@keyframes fadeInLeft {
+  from {
+      opacity:0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity:1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+      opacity:0;
+      transform: translateX(20px);
+  }
+  to {
+      opacity:1;
+      transform: translateX(0);
+  }
+}
+.in-left {
+  animation: fadeInLeft 1s 1s both;
+}
+
+.in-right {
+  animation: fadeInRight 1s 1s both;
 }

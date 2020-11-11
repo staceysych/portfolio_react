@@ -3,7 +3,7 @@ import React from 'react';
 import MainPage from '../main/main';
 
 const App = () => (
-  <section className="main-page">
+  <section>
     <div className="container">
       <MainPage />
     </div>

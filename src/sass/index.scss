@@ -1,5 +1,4 @@
 @import 'antd/dist/antd.css';
-@import './fonts.scss';
 
 @import './constants.scss';
 @import '../components/main/main.scss';
@@ -8,5 +7,5 @@
 @import '../components/promoPhoto/promoPhoto.scss';
 
 #app {
-    font-family: Countryside;
+    font-family: 'Lobster', cursive;
 }
