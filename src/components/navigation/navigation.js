@@ -13,9 +13,6 @@ const Navigation = () => (
         <a>Skills</a>
       </li>
       <li>
-        <a>Certificates</a>
-      </li>
-      <li>
         <a>Language teacher</a>
       </li>
       <li>

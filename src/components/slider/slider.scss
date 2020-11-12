@@ -1,0 +1,24 @@
+.instagram__photo {
+  width: 100%;
+  height: 75%;
+
+  object-fit: contain;
+}
+
+.instagram__desc {
+  max-height: 80px;
+  padding: 10px;
+  overflow: hidden;
+
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-overflow: ellipsis;
+}
+
+.slick-dots > li {
+  background: $text-color !important;
+}
+
+.slick-active button {
+  background: $main-color !important;
+}
