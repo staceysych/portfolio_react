@@ -1,10 +1,14 @@
 #about-page {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   margin-top: 60px;
 
-  background: rgb(255,213,64);
-  background: linear-gradient(180deg, rgba(255,213,64,1) 0%, rgba(255,224,115,0) 100%);
+  background: rgb(255, 213, 64);
+  background: linear-gradient(
+  180deg,
+  rgba(255, 213, 64, 1) 0%,
+  rgba(255, 224, 115, 0) 100%
+  );
 }
 
 .about {
@@ -12,16 +16,117 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  padding: 20px;
 }
 
-.about__description{
-    width: 40%;
+.about__description {
+  width: 50%;
+  height: 80%;
+
+  color: $text-color;
+  h2,
+  h3 {
+    color: $text-color;
+  }
+}
+
+.about__title {
+  font-size: 3rem;
+  text-decoration: underline;
+  letter-spacing: .1rem;
+}
+
+.about__name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  h3 {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.about__info {
+  font-size: 1.2rem;
+  line-height: 1.56;
+  font-family: "Roboto", sans-serif;
+  img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    border-bottom: 1px dotted $text-hover-color;
+  }
+}
+
+.about__follow {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100px;
+  height: 25px;
+  margin-top: 20px;
+  padding: 5px;
+
+  background: rgb(64, 93, 230);
+  background: linear-gradient(
+  90deg,
+  rgba(64, 93, 230, 1) 0%,
+  rgba(88, 81, 219, 1) 10%,
+  rgba(131, 58, 180, 1) 21%,
+  rgba(193, 53, 132, 1) 31%,
+  rgba(225, 48, 108, 1) 47%,
+  rgba(253, 29, 29, 1) 58%,
+  rgba(245, 96, 64, 1) 75%,
+  rgba(247, 119, 55, 1) 89%,
+  rgba(252, 175, 69, 1) 95%,
+  rgba(255, 220, 128, 1) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 0 3px 8px 0 rgba(50, 50, 50, .75);
+  cursor: pointer;
+
+  transition: all 1s ease-out;
+  span {
+    margin-left: 5px;
+
+    color: white;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.instagram-icon {
+  color: white;
 }
 
 .about__slider {
   width: 40%;
   height: 450px;
-  box-shadow: 0px 8px 15px 0px $text-hover-color;
 
   background: white;
+  box-shadow: 0 8px 15px 0 $text-hover-color;
+}
+
+.instagram-switcher {
+  font-family: Roboto, sans-serif;
+}
+
+.ant-switch {
+  background: $text-hover-color;
+}
+
+.ant-switch-checked {
+  background: $text-color;
 }

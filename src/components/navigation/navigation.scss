@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
 
   display: flex;
   justify-content: space-between;
@@ -13,7 +14,7 @@
   color: $text-color;
 
   background-color: $main-color;
-  z-index: 9;
+  box-shadow: 0 5px 6px 0 rgba(50, 50, 50, .75);
 }
 
 .navigation__links {

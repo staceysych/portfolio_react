@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import PromoPhoto from "../promoPhoto/promoPhoto";
+import React, { useState } from 'react';
+import PromoPhoto from '../promoPhoto/promoPhoto';
 
 const Promo = () => {
   const [frontOpacity, setFrontOpacity] = useState(0);
   const [langOpacity, setLangOpacity] = useState(0);
 
   const mouseOverHandler = ({ target }) => {
-    if (target.className === "in-left") {
+    if (target.className === 'in-left') {
       setFrontOpacity(1);
     }
-    if (target.className === "in-right") {
+    if (target.className === 'in-right') {
       setLangOpacity(1);
     }
   };
 
   const mouseOutHandler = ({ target }) => {
-    if (target.className === "in-left") {
+    if (target.className === 'in-left') {
       setFrontOpacity(0);
     }
-    if (target.className === "in-right") {
+    if (target.className === 'in-right') {
       setLangOpacity(0);
     }
   };
@@ -37,7 +37,7 @@ const Promo = () => {
           className="description"
           style={{
             opacity: frontOpacity,
-            background: frontOpacity !== 0 ? "#04356c78" : "none",
+            background: frontOpacity !== 0 ? '#04356c78' : 'none',
           }}
         >
           I create Web Applications, Landing pages, Websites and many other
@@ -57,7 +57,7 @@ const Promo = () => {
           className="description"
           style={{
             opacity: langOpacity,
-            background: langOpacity !== 0 ? "#04356c78" : "none",
+            background: langOpacity !== 0 ? '#04356c78' : 'none',
           }}
         >
           I am a teacher of English and Chinese. IELTS 8.0
