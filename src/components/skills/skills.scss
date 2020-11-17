@@ -1,0 +1,31 @@
+#skills-page {
+  display: flex;
+  height: 100vh;
+  margin-top: 60px;
+
+  color: $text-color;
+
+  background: rgb(255, 213, 64);
+  background: linear-gradient(
+  360deg,
+  rgba(255, 213, 64, 1) 0%,
+  rgba(255, 224, 115, 0) 100%
+  );
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  height: 100%;
+  padding: 20px;
+  h3 {
+    font-size: 3rem;
+    color: $text-color;
+    text-decoration: underline;
+    letter-spacing: .1rem;
+    text-align: end;
+    padding: 0 30px;
+  }
+}

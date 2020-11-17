@@ -1,0 +1,9 @@
+$main-color: #FFD540;
+$text-color: #04346C;
+$text-hover-color: #04356c78;
+
+:export {
+    mainColor: $main-color;
+    textColor: $text-color;
+    textHoverColor: $text-hover-color;
+}
