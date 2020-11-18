@@ -1,37 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Row, Col, Progress } from "antd";
+import { Col, Tooltip } from "antd";
 
-const columnStyle = {
-    background: "white",
-    padding: "8px 10px",
-    fontSize: "1.2rem",
-    display: "flex",
-  };
+import LabBeaker from "./skillsBeaker";
+
+const columnStyle = { display: "flex", height: 70 };
 
 const SkillsBar = ({ obj }) => {
+  const [isAnimationOn, setAnimationOn] = useState(false);
+  const handleMouseOver = () => {
+    setAnimationOn(true);
+  };
+  const handleMouseOut = () => {
+    setAnimationOn(false);
+  };
   return (
-    <Row
-      gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
-      justify="center"
-      align="middle"
-    >
-      <Col className="gutter-row" span={8}>
-        <div style={columnStyle}>{obj.name}</div>
-      </Col>
-      <Col className="gutter-row" span={15}>
-        <div style={columnStyle}>
-          <Progress
-            percent={obj.percent}
-            status="active"
-            strokeColor={{
-              "0%": obj.color1,
-              "100%": obj.color2,
+    <Col className="gutter-row" span={4}>
+      <div style={columnStyle}>
+        <Tooltip title="Click me">
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              cursor: "pointer",
             }}
+            src={obj.url}
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
           />
-        </div>
-      </Col>
-    </Row>
+        </Tooltip>
+      </div>
+      <div>
+        <LabBeaker
+          col={obj.color}
+          height={obj.height}
+          isAnimationOn={isAnimationOn}
+        />
+      </div>
+    </Col>
   );
 };
 

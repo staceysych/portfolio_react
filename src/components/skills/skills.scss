@@ -1,4 +1,5 @@
 #skills-page {
+  position: relative;
   display: flex;
   height: 100vh;
   margin-top: 60px;
@@ -14,7 +15,7 @@
 }
 
 .skills {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
@@ -28,4 +29,15 @@
     text-align: end;
     padding: 0 30px;
   }
+}
+
+.skills__grid {
+  height: 70%;
+  display: flex;
+}
+
+.skill__description {
+  width: 40%;
+  height: 70%;
+  background: white;
 }
