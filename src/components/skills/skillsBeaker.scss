@@ -1,4 +1,4 @@
-$brand: #04356c78;
+$brand: #7d94ad78;
 $width: 60px;
 $height: 300px;
 $time: 1s;
@@ -21,7 +21,6 @@ $timeSloshOffset: -$time - ($time*.1);
   border-bottom-left-radius: $width/2;
   transform: rotate(0);
 
-  // animation: rotate $time ease-in-out alternate infinite $timeOffset;
   &:before {
     content: "";
     position: absolute;
@@ -46,7 +45,6 @@ $timeSloshOffset: -$time - ($time*.1);
     background-color: rgba(black, .25);
     border-radius: 100%;
 
-    // animation: rotate-shadow $time ease-in-out alternate infinite $timeOffset;
   }
 }
 

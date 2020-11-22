@@ -1,5 +1,8 @@
+$description-width: 40%;
+
 #skills-page {
   position: relative;
+
   display: flex;
   height: 100vh;
   margin-top: 60px;
@@ -22,22 +25,53 @@
   height: 100%;
   padding: 20px;
   h3 {
-    font-size: 3rem;
+    padding: 0 30px;
+
+    font-size: 3em;
+    text-align: end;
     color: $text-color;
     text-decoration: underline;
     letter-spacing: .1rem;
-    text-align: end;
-    padding: 0 30px;
   }
 }
 
 .skills__grid {
-  height: 70%;
   display: flex;
+  height: 30em;
 }
 
 .skill__description {
-  width: 40%;
-  height: 70%;
+  width: $description-width;
+  padding: 1.2em;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
   background: white;
+  border-radius: 10px;
+}
+
+.education__description {
+  h3 {
+    padding: 0;
+
+    font-size: 2em;
+    text-align: start;
+  }
+  li {
+    margin-bottom: 10px;
+    padding: 0 5px;
+
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: Roboto, sans-serif;
+  }
+
+  span {
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: Roboto, sans-serif;
+  }
 }
